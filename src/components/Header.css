@@ -1,0 +1,23 @@
+/* Estilos para el contenedor principal */
+.add-post-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para los elementos internos */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilos específicos para el primer elemento .form-group */
+.form-group:nth-child(1) {
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+/* Estilos específicos para el segundo elemento .form-group */
+.form-group:nth-child(2) {
+  background-color: #d0d0d0;
+  padding: 15px;
+}  

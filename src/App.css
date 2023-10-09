@@ -1,0 +1,31 @@
+.App {
+  background-color: rgb(181, 182, 180);
+  text-align: center;
+  min-height: 200vh;
+}
+.App-header {
+  background-color: #1b1f27;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(252, 252, 252);
+}
+/* Post.css */
+.post-title {
+ background-color: grey; /* Grey background */
+ text-align: center; /* Centered text */
+ padding: 10px; /* Padding around the content */
+ margin: 20px; /* Margin around the post */
+ border-radius: 100px; /* Rounded corners */
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.post-content {
+  background-color: grey; /* Grey background */
+  margin: 20px; /* Margin around the post */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left;
+}
