@@ -15,7 +15,7 @@
 }
 /* Post.css */
 .post-title {
- text-align: center; /* Centered text */
+ text-align: left; /* Centered text */
  padding: 10px; /* Padding around the content */
  margin: 20px; /* Margin around the post */
  border-radius: 100px; /* Rounded corners */
