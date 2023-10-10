@@ -1,6 +1,6 @@
 .App {
   background-color: rgb(181, 182, 180);
-  text-align: center;
+  text-align: left;
   min-height: 200vh;
 }
 .App-header {
@@ -15,7 +15,7 @@
 }
 /* Post.css */
 .post-title {
- text-align: left; /* Centered text */
+ text-align: center; /* Centered text */
  padding: 10px; /* Padding around the content */
  margin: 20px; /* Margin around the post */
  border-radius: 100px; /* Rounded corners */
