@@ -1,11 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import './App.css';
 import Header from './components/Header';
 import PostList from './components/PostList';
-import PostDetail from './components/PostDetail'; // Componente para mostrar el contenido completo
+import PostDetail from './components/PostDetail';
 
 function App() {
-  // ...
+  const [posts, setPosts] = useState([
+    { id: 1, title: 'Publicaciones:', content: '' },
+  ]);
 
   return (
     <div className="App">
