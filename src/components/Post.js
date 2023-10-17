@@ -1,11 +1,9 @@
 // Post.js
 import React from 'react';
 
-function Post({ title, content }) {
+function Post({ content }) {
   return (
-    <><div className="post-title">
-      <h2>{title}</h2>
-    </div><div className="post-content">
+    <><div>
         <p>{content}</p>
       </div>
     </>
