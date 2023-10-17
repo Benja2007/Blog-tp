@@ -27,10 +27,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: left;
 }
-::marker {
-  unicode-bidi: isolate;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
+ul {
+  list-style-type: none;
 }
