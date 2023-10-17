@@ -3,12 +3,12 @@ import React from 'react';
 
 function Post({ content }) {
   return (
-    <ul>
     <><div>
+      <ul>
         <p>{content}</p>
+        </ul>
       </div>
     </>
-    </ul>
   );
 }
 
