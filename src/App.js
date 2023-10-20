@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'; // Importa BrowserRouter y Route
 import './App.css';
 import Header from './components/Header';
 import PostList from './components/PostList';
