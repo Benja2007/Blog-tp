@@ -1,29 +1,24 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom'; // Importa BrowserRouter, Link y Route
 import Header from './components/Header';
 import PostList from './components/PostList';
-import AddPostForm from './components/AddPostForm';
+import PostDetail from './components/PostDetail';
 
 function App() {
-  // Definimos un estado para las publicaciones
-  const [posts, setPosts] = useState([]);
-
-  // Función para agregar una nueva publicación al estado
-  const addPost = (newPost) => {
-    setPosts([...posts, newPost]);
-  };
+  const [posts, setPosts] = useState([
+    { id: 1, title: 'Publicaciones:', content: '' },
+  ]);
 
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <main>
-          <Route path="/" exact component={PostList} />
-          <Route path="/add" render={() => <AddPostForm onAddPost={addPost} />} />
-        </main>
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      <main>
+        <Router>
+          <Route path="/" exact render={() => <PostList posts={posts} />} />
+          <Route path="/post/:id" component={PostDetail} />
+        </Router>
+      </main>
+    </div>
   );
 }
 
