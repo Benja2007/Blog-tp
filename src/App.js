@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'; // Importa BrowserRouter, Link y Route
+import { BrowserRouter as Router, Route } from 'react-router-dom'; // Importa BrowserRouter, Link y Route
 import Header from './components/Header';
 import PostList from './components/PostList';
 import AddPostForm from './components/AddPostForm';
