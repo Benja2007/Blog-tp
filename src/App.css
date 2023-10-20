@@ -15,6 +15,7 @@
 }
 /* Post.css */
 .post-title {
+ background-color: grey; /* Grey background */
  text-align: center; /* Centered text */
  padding: 10px; /* Padding around the content */
  margin: 20px; /* Margin around the post */
@@ -22,11 +23,12 @@
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 .post-content {
+  background-color: grey; /* Grey background */
   margin: 20px; /* Margin around the post */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: left;
 }
-ul {
+ul{
   list-style-type: none;
 }
