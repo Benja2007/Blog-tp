@@ -1,8 +1,11 @@
+/* Estilos para el contenedor principal */
 .App {
   background-color: rgb(181, 182, 180);
   text-align: center;
   min-height: 200vh;
 }
+
+/* Estilos para el encabezado */
 .App-header {
   background-color: #1b1f27;
   min-height: 20vh;
@@ -13,22 +16,46 @@
   font-size: calc(10px + 2vmin);
   color: rgb(252, 252, 252);
 }
-/* Post.css */
+
+/* Estilos para el botón de creación de un nuevo post en PostList.js */
+.post-list button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el título del post que muestra/oculta comentarios en Post.js */
 .post-title {
- background-color: grey; /* Grey background */
- text-align: center; /* Centered text */
- padding: 10px; /* Padding around the content */
- margin: 20px; /* Margin around the post */
- border-radius: 100px; /* Rounded corners */
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: grey;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Agregado para indicar que se puede hacer clic */
 }
+
+/* Estilos para el contenido del post y los comentarios en Post.js */
 .post-content {
-  background-color: grey; /* Grey background */
-  margin: 20px; /* Margin around the post */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: grey;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+  display: none; /* Oculta inicialmente el contenido y los comentarios */
 }
-ul{
+
+/* Estilos para la lista de comentarios en Post.js */
+.post-content ul {
   list-style-type: none;
+}
+
+/* Estilos para los comentarios en Post.js */
+.post-content li {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  background-color: #f0f0f0;
 }
