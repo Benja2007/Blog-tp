@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 function AddPostForm({ onAddPost }) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +10,6 @@ function AddPostForm({ onAddPost }) {
     onAddPost(newPost);
     setTitle('');
     setContent('');
-    navigate('/');
   };
 
   return (

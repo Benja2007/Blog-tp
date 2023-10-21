@@ -1,19 +1,15 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-function Post({ posts }) {
-  const { id } = useParams();
-  const post = posts.find((p) => p.id.toString() === id);
-
-  if (!post) {
-    return <div>Post no encontrado.</div>;
-  }
-
+function Post({ title, content }) {
   return (
-    <div>
-      <h2>{post.title}</h2>
-      <p>{post.content}</p>
-    </div>
+    <>
+      <div className="post-title">
+        <h2>{title}</h2>
+      </div>
+      <div className="post-content">
+        <p>{content}</p>
+      </div>
+    </>
   );
 }
 

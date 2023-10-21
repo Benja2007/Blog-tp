@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Post from './Post';
 
 function PostList({ posts }) {
   return (
@@ -8,9 +8,7 @@ function PostList({ posts }) {
       <ul>
         {posts.map((post) => (
           <li key={post.id}>
-            <Link to={`/post/${post.id}`}>
-              <h3>{post.title}</h3>
-            </Link>
+            <Post title={post.title} content={post.content} />
           </li>
         ))}
       </ul>
