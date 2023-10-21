@@ -1,6 +1,5 @@
-// PostList.js
 import React from 'react';
-import Post from './Post'; // Asegúrate de importar el componente Post
+import { Link } from 'react-router-dom';
 
 function PostList({ posts }) {
   return (
@@ -9,7 +8,9 @@ function PostList({ posts }) {
       <ul>
         {posts.map((post) => (
           <li key={post.id}>
-            <Post title={post.title} content={post.content} />
+            <Link to={`/post/${post.id}`}>
+              <h3>{post.title}</h3>
+            </Link>
           </li>
         ))}
       </ul>
