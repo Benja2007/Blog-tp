@@ -12,11 +12,9 @@ function App() {
       <div className="App">
         <Header />
         <main>
-          <Switch>
             <Route path="/" exact component={PostList} />
             <Route path="/add" component={AddPostForm} />
             <Route path="/post/:id" component={Post} />
-          </Switch>
         </main>
       </div>
     </Router>
