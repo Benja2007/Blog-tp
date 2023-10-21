@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function AddPostForm({ onAddPost }) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +12,7 @@ function AddPostForm({ onAddPost }) {
     onAddPost(newPost);
     setTitle('');
     setContent('');
-    history.push('/');
+    navigate('/');
   };
 
   return (
