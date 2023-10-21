@@ -6,7 +6,8 @@ function PostForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const post = { title, content };
+    // No se utiliza la variable post, así que la eliminamos
+    // const post = { title, content };
     // Guardar el post en el local storage aquí
     // Limpia los campos de entrada después de guardar
     setTitle('');
