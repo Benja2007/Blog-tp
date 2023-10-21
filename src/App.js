@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Post from './components/Post';
 import AddPostForm from './components/AddPostForm';
@@ -12,9 +12,11 @@ function App() {
       <div className="App">
         <Header />
         <main>
+          <Switch>
             <Route path="/" exact component={PostList} />
             <Route path="/add" component={AddPostForm} />
             <Route path="/post/:id" component={Post} />
+          </Switch>
         </main>
       </div>
     </Router>
