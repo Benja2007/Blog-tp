@@ -1,12 +1,18 @@
 import React from 'react';
 
 function PostList() {
-  // Obtén los posts del local storage y muestra la lista de posts
-  // Puedes usar un enlace para volver a la página principal
+  const posts = JSON.parse(localStorage.getItem('posts')) || [];
+
   return (
     <div>
       <h2>Blog Post List</h2>
-      {/* Muestra la lista de posts */}
+      <ul>
+        {posts.map((post, index) => (
+          <li key={index}>
+            <a href={`/post/${index}`}>{post.title}</a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

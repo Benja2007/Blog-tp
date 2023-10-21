@@ -6,10 +6,10 @@ function PostForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // No se utiliza la variable post, así que la eliminamos
-    // const post = { title, content };
-    // Guardar el post en el local storage aquí
-    // Limpia los campos de entrada después de guardar
+    const post = { title, content };
+    const posts = JSON.parse(localStorage.getItem('posts')) || [];
+    posts.push(post);
+    localStorage.setItem('posts', JSON.stringify(posts));
     setTitle('');
     setContent('');
   }
