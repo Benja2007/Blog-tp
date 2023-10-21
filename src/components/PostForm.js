@@ -1,22 +1,19 @@
 import React, { useState } from 'react';
 
-function PostForm() {
+function PostForm({ addPost }) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const post = { title, content };
-    const posts = JSON.parse(localStorage.getItem('posts')) || [];
-    posts.push(post);
-    localStorage.setItem('posts', JSON.stringify(posts));
+    addPost({ title, content });
     setTitle('');
     setContent('');
   }
 
   return (
     <div>
-      <h2>Blog Post Form</h2>
+      <h2>Add a New Post</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -29,7 +26,7 @@ function PostForm() {
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-        <button type="submit">Submit Post</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

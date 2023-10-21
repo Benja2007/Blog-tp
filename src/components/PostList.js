@@ -1,15 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function PostList() {
-  const posts = JSON.parse(localStorage.getItem('posts')) || [];
-
+function PostList({ posts }) {
   return (
     <div>
-      <h2>Blog Post List</h2>
+      <h2>Blog Posts</h2>
       <ul>
         {posts.map((post, index) => (
           <li key={index}>
-            <a href={`/post/${index}`}>{post.title}</a>
+            <Link to={`/post/${index}`}>{post.title}</Link>
           </li>
         ))}
       </ul>
